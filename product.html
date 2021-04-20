@@ -65,28 +65,7 @@
                     </ul>
                   </li>
                   <li class="nav_mobile__item">
-                    <a class="nav_mobile__link jsNavMobileLink" href="profile.html">
-                      <svg class="icon icon_icon-arrow-before nav_mobile__arrow_before">
-                        <use xlink:href="img/icons.svg#icon-arrow-before"></use>
-                      </svg>My Account
-                      <svg class="icon icon_icon-arrow nav_mobile__arrow">
-                        <use xlink:href="img/icons.svg#icon-arrow"></use>
-                      </svg>
-                    </a>
-                    <ul class="nav_mobile__sublist">
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="orders.html">Orders</a>
-                      </li>
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="addresses.html">Addresses</a>
-                      </li>
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="accountDetails.html">Account Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav_mobile__item">
-                    <a class="nav_mobile__link" href="index.html">Log Out</a>
+                    <a class="nav_mobile__link" href="login.html">Login</a>
                   </li>
                 </ul>
                 <div class="lang_mobile">
@@ -145,17 +124,40 @@
               <a class="nav__link" href="news&amp;blog.html">News &amp; Blog</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="aboutUs.html">About Us</a>
+              <a class="nav__link" href="aboutUs.html">About Us
+                <svg class="icon icon_icon-arrow-down nav__icon">
+                  <use xlink:href="img/icons.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+              <ul class="nav__sublist">
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="about.html">About State Of Mind</a>
+                </li>
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="partnrers.html">Our Partnrers</a>
+                </li>
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
         <div class="header__actions">
-          <div class="lang header__lang d-none d-lg-block">
-            <select>
-              <option value="FR">FR</option>
-              <option value="EN" selected="selected">EN</option>
-              <option value="RU">RU</option>
-            </select>
+          <div class="lang header__lang d-none d-lg-flex">
+            <div class="lang__active">EN
+              <svg class="icon icon_icon-arrow-down lang__icon">
+                <use xlink:href="img/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__link" href="javascript:void(0)">FR</a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__link" href="javascript:void(0)">RU</a>
+              </li>
+            </ul>
           </div>
           <div class="mini_cart header__mini_cart">
             <a class="mini_cart__link" href="miniCart.html">
@@ -166,18 +168,11 @@
             </a>
           </div>
           <div class="auth header__auth">
-            <div class="d-none d-lg-flex">
-              <a class="auth__link" href="profile.html">
-                <svg class="icon icon_icon-profile auth__icon">
-                  <use xlink:href="img/icons.svg#icon-profile"></use>
-                </svg>
-              </a>
-              <a class="auth__link" href="index.html">
-                <svg class="icon icon_icon-logout auth__icon">
-                  <use xlink:href="img/icons.svg#icon-logout"></use>
-                </svg>
-              </a>
-            </div>
+            <a class="auth__link" href="login.html">
+              <svg class="icon icon_icon-login auth__icon">
+                <use xlink:href="img/icons.svg#icon-login"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -198,167 +193,184 @@
         </ul>
       </div>
     </div>
-    <div class="block block--reverse_mobile" style="background-color: #FEFDFA;">
+    <div class="block block--gallery" style="background-color: #FEFDFA;">
       <div class="container">
-        <div class="block__content--reverse_mobile block__content--gallery block__content" data-aos="fade-left">
-          <div class="container">
-            <h3 class="title block__subtitle">Modern Nomad</h3>
-            <h2 class="title block__title">Perfume</h2>
-            <div class="block__atributes">100ml – Perfume | Parfums de l’Esprit</div>
-            <p class="block__text">Mordern Nomad is a perfume with an unusual trail, absolutely dreamy worn with a leather jacket and cashmere scarf, perfect companions of today’s nomadic life.</p>
-            <div class="counter block__counter">
-              <button class="counter__btn">
-                <svg class="icon icon_icon-minus counter__icon">
-                  <use xlink:href="img/icons.svg#icon-minus"></use>
-                </svg>
-              </button>
-              <input class="counter__count" type="number" value="1" />
-              <button class="counter__btn">
-                <svg class="icon icon_icon-plus counter__icon">
-                  <use xlink:href="img/icons.svg#icon-plus"></use>
-                </svg>
-              </button>
-            </div>
-            <div class="block__price">€ 235,00</div>
-            <div class="block__btn">
-              <a class="btn--brown btn" href="#">Add to Cart</a>
+        <div class="  flex-column-reverse flex-lg-row-reverse row">
+          <div class="col col-12 col-lg-6 d-lg-flex">
+            <div class="block__content--gallery block__content--gallery block__content" data-aos="fade-right" data-aos-delay="300">
+              <div class="container">
+                <h3 class="title block__subtitle">Modern Nomad</h3>
+                <h2 class="title block__title">Perfume</h2>
+                <div class="block__atributes">100ml – Perfume | Parfums de l’Esprit</div>
+                <p class="block__text">Mordern Nomad is a perfume with an unusual trail, absolutely dreamy worn with a leather jacket and cashmere scarf, perfect companions of today’s nomadic life.</p>
+                <div class="counter block__counter">
+                  <button class="counter__btn">
+                    <svg class="icon icon_icon-minus counter__icon jsCounterMinus">
+                      <use xlink:href="img/icons.svg#icon-minus"></use>
+                    </svg>
+                  </button>
+                  <input class="counter__count jsCounterCount" type="number" value="1" />
+                  <button class="counter__btn">
+                    <svg class="icon icon_icon-plus counter__icon jsCounterPlus">
+                      <use xlink:href="img/icons.svg#icon-plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="block__price">€ 235,00
+                </div>
+                <div class="block__btn">
+                  <a class="btn--brown btn" href="#">Add to Cart</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="block__gallery">
-          <div class="container">
-            <div class="swiper-container block__thumbs_container jsBlockThumbs">
-              <div class="swiper-wrapper block__thumbs_wrapper">
-                <div class="swiper-slide block__thumbs_item">
-                  <figure class="block__thumbs_picture">
-                    <img class="block__thumbs_img" src="./img/single/single01.png" alt="" />
-                  </figure>
-                </div>
-                <div class="swiper-slide block__thumbs_item">
-                  <figure class="block__thumbs_picture">
-                    <img class="block__thumbs_img" src="./img/single/single02.png" alt="" />
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-container block__product_container jsBlockGallery">
-              <div class="swiper-wrapper block__product_wrapper">
-                <div class="swiper-slide block__product_item">
-                  <figure class="block__product_picture">
-                    <img class="block__product_img" src="./img/single/single01.png" alt="" />
-                  </figure>
-                </div>
-                <div class="swiper-slide block__product_item">
-                  <figure class="block__product_picture">
-                    <img class="block__product_img" src="./img/single/single02.png" alt="" />
-                  </figure>
+          <div class="col col-12 col-lg-6">
+            <div class="block__gallery" data-aos="fade-left" data-aos-delay="300">
+              <div class="swiper-container block__thumbs_container jsBlockThumbs">
+                <div class="swiper-wrapper block__thumbs_wrapper">
+                  <div class="swiper-slide block__thumbs_item">
+                    <figure class="block__thumbs_picture">
+                      <img class="block__thumbs_img" src="./img/single/single01.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="swiper-slide block__thumbs_item">
+                    <figure class="block__thumbs_picture">
+                      <img class="block__thumbs_img" src="./img/single/single02.png" alt="" />
+                    </figure>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-scrollbar block__product_scrollbar d-lg-none scrollbar"></div>
+              <div class="swiper-container block__product_container jsBlockGallery">
+                <div class="swiper-wrapper block__product_wrapper">
+                  <div class="swiper-slide block__product_item">
+                    <figure class="block__product_picture">
+                      <img class="block__product_img" src="./img/single/single01.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="swiper-slide block__product_item">
+                    <figure class="block__product_picture">
+                      <img class="block__product_img" src="./img/single/single02.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar block__product_scrollbar d-lg-none scrollbar"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="block">
-      <div class="block__content--ingredients block__content" data-aos="fade-left">
-        <div class="container">
-          <h3 class="title block__subtitle">Ingredients</h3>
-          <h2 class="title block__title">Woody Leather</h2>
-          <p class="block__text">Top: Grilled Hojicha Tea, Rose, Yunnann Black&Puerth Tea<br>Heart: Plum, Amber, Patchouli<br>Base: Leather, Oud, Vanilla</p>
-        </div>
-      </div>
+    <div class="block block--ingredients">
       <div class="container">
-        <div class="block__ingredients--count4 block__ingredients">
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/4/01.jpg" alt="" />
-          </figure>
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/4/02.jpg" alt="" />
-          </figure>
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/4/03.jpg" alt="" />
-          </figure>
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/4/04.jpg" alt="" />
-          </figure>
+        <div class="   row">
+          <div class="col col-12 col-lg-6 d-lg-flex">
+            <div class="block__content--ingredients block__content--ingredients block__content" data-aos="fade-right" data-aos-delay="300">
+              <div class="container">
+                <h3 class="title block__subtitle">Ingredients</h3>
+                <h2 class="title block__title">Woody Leather</h2>
+                <p class="block__text">Top: Grilled Hojicha Tea, Rose, Yunnann Black&Puerth Tea<br>Heart: Plum, Amber, Patchouli<br>Base: Leather, Oud, Vanilla</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-lg-6">
+            <div class="block__ingredients_wrap" data-aos="fade-left" data-aos-delay="300">
+              <div class="block__ingredients--count4 block__ingredients">
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/4/01.jpg" alt="" />
+                </figure>
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/4/02.jpg" alt="" />
+                </figure>
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/4/03.jpg" alt="" />
+                </figure>
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/4/04.jpg" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="section">
       <div class="container">
-        <figure class="section__picture">
+        <figure class="section__picture d-none d-md-block">
           <img class="section__img" src="./img/single/title.png" alt="" />
         </figure>
         <h2 class="title section__title">Discover more Modern Nomad</h2>
-        <div class="row">
+        <div class="row gutter-20">
           <div class="col col-6 col-md-4 col-xl-3">
-            <div class="product">
-              <figure class="product__picture">
+            <a class="product section__product" href="product.html">
+              <figure class="product__picture--small-mobile product__picture">
                 <img class="product__img swiper-lazy" data-src="./img/universes/products/item4.png" alt="" />
               </figure>
-              <h4 class="title product__title">Modern Nomad Home Diffuser</h4>
-              <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+              <h4 class="title  product__title--small-mobile product__title">Modern Nomad Home Diffuser</h4>
+              <div class="product__price">€ 235,00
+                <div class="product__action--small-mobile product__action d-lg-none">
                   <svg class="icon icon_icon-add-to-cart product__icon">
                     <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                   </svg>
-                </a>
+                </div>
               </div>
               <div class="product__btn d-none d-lg-block">
-                <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col col-6 col-md-4 col-xl-3">
-            <div class="product">
-              <figure class="product__picture">
+            <a class="product section__product" href="product.html">
+              <figure class="product__picture--small-mobile product__picture">
                 <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
               </figure>
-              <h4 class="title product__title">Modern Nomad Tea</h4>
-              <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+              <h4 class="title  product__title--small-mobile product__title">Modern Nomad Tea</h4>
+              <div class="product__price">€ 235,00
+                <div class="product__action--small-mobile product__action d-lg-none">
                   <svg class="icon icon_icon-add-to-cart product__icon">
                     <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                   </svg>
-                </a>
+                </div>
               </div>
               <div class="product__btn d-none d-lg-block">
-                <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col col-6 col-md-4 col-xl-3">
-            <div class="product">
-              <figure class="product__picture">
+            <a class="product section__product" href="product.html">
+              <figure class="product__picture--small-mobile product__picture">
                 <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
               </figure>
-              <h4 class="title product__title">Modern Nomad Perfume</h4>
-              <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+              <h4 class="title  product__title--small-mobile product__title">Modern Nomad Perfume</h4>
+              <div class="product__price">€ 235,00
+                <div class="product__action--small-mobile product__action d-lg-none">
                   <svg class="icon icon_icon-add-to-cart product__icon">
                     <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                   </svg>
-                </a>
+                </div>
               </div>
               <div class="product__btn d-none d-lg-block">
-                <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
               </div>
-            </div>
+            </a>
           </div>
           <div class="col col-6 col-md-4 col-xl-3">
-            <div class="product">
-              <figure class="product__picture">
+            <a class="product section__product" href="product.html">
+              <figure class="product__picture--small-mobile product__picture">
                 <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
               </figure>
-              <h4 class="title product__title">Modern Nomad Silk Scarf</h4>
-              <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+              <h4 class="title  product__title--small-mobile product__title">Modern Nomad Silk Scarf</h4>
+              <div class="product__price">€ 235,00
+                <div class="product__action--small-mobile product__action d-lg-none">
                   <svg class="icon icon_icon-add-to-cart product__icon">
                     <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                   </svg>
-                </a>
+                </div>
               </div>
               <div class="product__btn d-none d-lg-block">
-                <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="section__btn">
@@ -367,52 +379,68 @@
       </div>
     </div>
     <div class="block">
-      <div class="block__content--ingredients block__content" data-aos="fade-left">
-        <div class="container">
-          <h3 class="title block__subtitle">Ingredients</h3>
-          <h2 class="title block__title">Woody Leather</h2>
-          <p class="block__text">Top: Grilled Hojicha Tea, Rose, Yunnann Black&Puerth Tea<br>Heart: Plum, Amber, Patchouli<br>Base: Leather, Oud, Vanilla</p>
-        </div>
-      </div>
       <div class="container">
-        <div class="block__ingredients--count3 block__ingredients">
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/3/01.jpg" alt="" />
-          </figure>
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/3/02.jpg" alt="" />
-          </figure>
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/3/03.jpg" alt="" />
-          </figure>
+        <div class="   row">
+          <div class="col col-12 col-lg-6 d-lg-flex">
+            <div class="block__content--ingredients block__content" data-aos="fade-right" data-aos-delay="300">
+              <div class="container">
+                <h3 class="title block__subtitle">Ingredients</h3>
+                <h2 class="title block__title">Woody Leather</h2>
+                <p class="block__text">Top: Grilled Hojicha Tea, Rose, Yunnann Black&Puerth Tea<br>Heart: Plum, Amber, Patchouli<br>Base: Leather, Oud, Vanilla</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-lg-6">
+            <div class="block__ingredients_wrap" data-aos="fade-left" data-aos-delay="300">
+              <div class="block__ingredients--count3 block__ingredients">
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/3/01.jpg" alt="" />
+                </figure>
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/3/02.jpg" alt="" />
+                </figure>
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/3/03.jpg" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="block">
-      <div class="block__content--ingredients block__content" data-aos="fade-left">
-        <div class="container">
-          <h3 class="title block__subtitle">Ingredients</h3>
-          <h2 class="title block__title">Woody Leather</h2>
-          <p class="block__text">Top: Grilled Hojicha Tea, Rose, Yunnann Black&Puerth Tea<br>Heart: Plum, Amber, Patchouli<br>Base: Leather, Oud, Vanilla</p>
-        </div>
-      </div>
       <div class="container">
-        <div class="block__ingredients--count5 block__ingredients">
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/5/01.jpg" alt="" />
-          </figure>
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/5/02.jpg" alt="" />
-          </figure>
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/5/03.jpg" alt="" />
-          </figure>
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/5/04.jpg" alt="" />
-          </figure>
-          <figure class="block__ingredients_picture">
-            <img class="block__ingredients_img" src="./img/single/5/05.jpg" alt="" />
-          </figure>
+        <div class="   row">
+          <div class="col col-12 col-lg-6 d-lg-flex">
+            <div class="block__content--ingredients block__content" data-aos="fade-right" data-aos-delay="300">
+              <div class="container">
+                <h3 class="title block__subtitle">Ingredients</h3>
+                <h2 class="title block__title">Woody Leather</h2>
+                <p class="block__text">Top: Grilled Hojicha Tea, Rose, Yunnann Black&Puerth Tea<br>Heart: Plum, Amber, Patchouli<br>Base: Leather, Oud, Vanilla</p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-12 col-lg-6">
+            <div class="block__ingredients_wrap" data-aos="fade-left" data-aos-delay="300">
+              <div class="block__ingredients--count5 block__ingredients">
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/5/01.jpg" alt="" />
+                </figure>
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/5/02.jpg" alt="" />
+                </figure>
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/5/03.jpg" alt="" />
+                </figure>
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/5/04.jpg" alt="" />
+                </figure>
+                <figure class="block__ingredients_picture">
+                  <img class="block__ingredients_img" src="./img/single/5/05.jpg" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -479,13 +507,13 @@
                 <div class="footer_subscribe__title">Subscribe and get 10% OFF!</div>
                 <div class="form footer_subscribe__form">
                   <form action="#">
-                    <label class="form__label" for="youremailaddress">Your Email Address</label>
+                    <label class="form__label--small form__label--dcreme form__label" for="youremailaddress">Your Email Address</label>
                     <div class="form__row footer_subscribe__row">
-                      <div class="form__controls form__controls--white form__controls--small footer_subscribe__input">
-                        <input class="form__input--white form__input--small form__input" type="text" id="youremailaddress" placeholder="" />
+                      <div class="form__controls form__controls--dcreme form__controls--subscribe footer_subscribe__input">
+                        <input class="form__input--dcreme form__input--subscribe form__input" type="text" id="youremailaddress" placeholder="" />
                       </div>
-                      <div class="form__controls form__controls--subscribe footer_subscribe__btn">
-                        <input class="btn--subscribe form__submit btn" type="submit" value="subscribe" />
+                      <div class="form__controls form__controls--subscribe_btn footer_subscribe__btn">
+                        <input class="btn--subscribe_btn form__submit btn" type="submit" value="subscribe" />
                       </div>
                     </div>
                   </form>

@@ -65,28 +65,7 @@
                     </ul>
                   </li>
                   <li class="nav_mobile__item">
-                    <a class="nav_mobile__link jsNavMobileLink" href="profile.html">
-                      <svg class="icon icon_icon-arrow-before nav_mobile__arrow_before">
-                        <use xlink:href="img/icons.svg#icon-arrow-before"></use>
-                      </svg>My Account
-                      <svg class="icon icon_icon-arrow nav_mobile__arrow">
-                        <use xlink:href="img/icons.svg#icon-arrow"></use>
-                      </svg>
-                    </a>
-                    <ul class="nav_mobile__sublist">
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="orders.html">Orders</a>
-                      </li>
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="addresses.html">Addresses</a>
-                      </li>
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="accountDetails.html">Account Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav_mobile__item">
-                    <a class="nav_mobile__link" href="index.html">Log Out</a>
+                    <a class="nav_mobile__link" href="login.html">Login</a>
                   </li>
                 </ul>
                 <div class="lang_mobile">
@@ -145,17 +124,40 @@
               <a class="nav__link" href="news&amp;blog.html">News &amp; Blog</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="aboutUs.html">About Us</a>
+              <a class="nav__link" href="aboutUs.html">About Us
+                <svg class="icon icon_icon-arrow-down nav__icon">
+                  <use xlink:href="img/icons.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+              <ul class="nav__sublist">
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="about.html">About State Of Mind</a>
+                </li>
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="partnrers.html">Our Partnrers</a>
+                </li>
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
         <div class="header__actions">
-          <div class="lang header__lang d-none d-lg-block">
-            <select>
-              <option value="FR">FR</option>
-              <option value="EN" selected="selected">EN</option>
-              <option value="RU">RU</option>
-            </select>
+          <div class="lang header__lang d-none d-lg-flex">
+            <div class="lang__active">EN
+              <svg class="icon icon_icon-arrow-down lang__icon">
+                <use xlink:href="img/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__link" href="javascript:void(0)">FR</a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__link" href="javascript:void(0)">RU</a>
+              </li>
+            </ul>
           </div>
           <div class="mini_cart header__mini_cart">
             <a class="mini_cart__link" href="miniCart.html">
@@ -166,18 +168,11 @@
             </a>
           </div>
           <div class="auth header__auth">
-            <div class="d-none d-lg-flex">
-              <a class="auth__link" href="profile.html">
-                <svg class="icon icon_icon-profile auth__icon">
-                  <use xlink:href="img/icons.svg#icon-profile"></use>
-                </svg>
-              </a>
-              <a class="auth__link" href="index.html">
-                <svg class="icon icon_icon-logout auth__icon">
-                  <use xlink:href="img/icons.svg#icon-logout"></use>
-                </svg>
-              </a>
-            </div>
+            <a class="auth__link" href="login.html">
+              <svg class="icon icon_icon-login auth__icon">
+                <use xlink:href="img/icons.svg#icon-login"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -202,36 +197,44 @@
       <div class="container">
         <div class="row">
           <div class="col col-10 offset-1 col-lg-4 offset-lg-4">
-            <figure class="collection_hero__picture">
+            <figure class="collection_hero__picture" data-aos="fade-up" data-aos-delay="300">
               <img class="lazy-swiper collection_hero__img" src="./img/universes/01.png" alt="" />
             </figure>
           </div>
           <div class="col col-12">
-            <h1 class="title collection_hero__title">Modern Nomad</h1>
-            <h3 class="title collection_hero__subtitle">Collection</h3>
+            <h1 class="title collection_hero__title" data-aos="fade-up" data-aos-delay="600">Modern Nomad</h1>
+            <h3 class="title collection_hero__subtitle" data-aos="fade-up" data-aos-delay="900">Collection</h3>
           </div>
         </div>
       </div>
     </div>
     <div class="section section--collection_description">
-      <div class="container">Here is a short description about Universe. Change is the only constant thing in life.<br>The nomad spirit helps embrace any situation easily and makes you happy, travelling your life.
+      <div class="container">
+        <p>Here is a short description about Universe. Change is the only constant thing in life.<br>The nomad spirit helps embrace any situation easily and makes you happy, travelling your life.</p>
       </div>
     </div>
     <div class="block block--reverse block--product">
-      <div class="block__content--reverse block__content--product block__content" data-aos="fade-left">
-        <div class="container">
-          <h2 class="title block__title">Modern<br>Nomad Perfume</h2>
-          <p class="block__text">Short description about product. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-          <div class="block__price">€ 235,00</div>
-          <div class="block__btn">
-            <a class="btn--brown btn" href="#">Add to Cart</a>
+      <div class="flex-lg-row-reverse no-gutters  row">
+        <div class="col col-12 col-lg-6 d-lg-flex">
+          <div class="block__content--reverse block__content--product block__content" data-aos="fade-left" data-aos-delay="300">
+            <div class="container">
+              <h2 class="title block__title">Modern<br>Nomad Perfume</h2>
+              <p class="block__text">Short description about product. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+              <div class="block__price">€ 235,00
+              </div>
+              <div class="block__btn">
+                <a class="btn--brown btn" href="#">Add to Cart</a>
+              </div>
+              <a class="block__action" href="#">View full details</a>
+            </div>
           </div>
-          <a class="block__action" href="#">View full details</a>
+        </div>
+        <div class="col col-12 col-lg-6">
+          <figure class="block__picture" data-aos="fade-right" data-aos-delay="300">
+            <img class="block__img swiper-lazy" data-src="./img/collection/product.jpg" alt="" />
+          </figure>
         </div>
       </div>
-      <figure class="block__picture" data-aos="fade-right">
-        <img class="block__img swiper-lazy" data-src="./img/collection/product.jpg" alt="" />
-      </figure>
     </div>
     <div class="section section--collection_isotope collection_isotope">
       <div class="container">
@@ -262,309 +265,325 @@
           </div>
         </div>
         <div class="collection_isotope__grid jsCollectionIsotopeGrid">
-          <div class="row">
-            <div class="homediffuser col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+          <div class="row gutter-20">
+            <div class="col col-6 col-md-4 col-xl-3 homediffuser jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/item4.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Home Diffuser</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Home Diffuser</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="tea col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 tea jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/02.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Tea</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Tea</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="perfume col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 perfume jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/03.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Perfume</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Perfume</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="silkscarf col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 silkscarf jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/04.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Silk Scarf</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Silk Scarf</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="homediffuser col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 homediffuser jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/item4.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Home Diffuser</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Home Diffuser</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="tea col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 tea jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/02.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Tea</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Tea</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="perfume col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 perfume jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/03.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Perfume</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Perfume</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="silkscarf col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 silkscarf jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/04.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Silk Scarf</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Silk Scarf</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="candle col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 candle jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/05.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Candle</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Candle</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="homediffuser col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 homediffuser jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/item4.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Home Diffuser</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Home Diffuser</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="tea col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 tea jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/02.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Tea</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Tea</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="perfume col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 perfume jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/03.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Perfume</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Perfume</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="silkscarf col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 silkscarf jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/04.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Silk Scarf</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Silk Scarf</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="candle col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 candle jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/05.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Candle</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Candle</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="candle col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 candle jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/05.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Candle</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Candle</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
-            <div class="homediffuser col col-6 col-md-4 col-xl-3 jsCollectionIsotopeItem">
+            <div class="col col-6 col-md-4 col-xl-3 homediffuser jsCollectionIsotopeItem">
               <div class="collection_isotope__item">
-                <div class="product collection_isotope__product">
-                  <figure class="product__picture">
+                <a class="product collection_isotope__product" href="product.html">
+                  <figure class="product__picture--small-mobile product__picture">
                     <img class="product__img isotope-lazy" src="./img/universes/products/item4.png" alt="" />
                   </figure>
-                  <h4 class="title product__title">Modern Nomad Home Diffuser</h4>
-                  <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+                  <h4 class="title  product__title--small-mobile product__title">Modern Nomad Home Diffuser</h4>
+                  <div class="product__price">€ 235,00
+                    <div class="product__action--small-mobile product__action d-lg-none">
                       <svg class="icon icon_icon-add-to-cart product__icon">
                         <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                       </svg>
-                    </a>
+                    </div>
                   </div>
                   <div class="product__btn d-none d-lg-block">
-                    <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                    <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -634,13 +653,13 @@
                 <div class="footer_subscribe__title">Subscribe and get 10% OFF!</div>
                 <div class="form footer_subscribe__form">
                   <form action="#">
-                    <label class="form__label" for="youremailaddress">Your Email Address</label>
+                    <label class="form__label--small form__label--dcreme form__label" for="youremailaddress">Your Email Address</label>
                     <div class="form__row footer_subscribe__row">
-                      <div class="form__controls form__controls--white form__controls--small footer_subscribe__input">
-                        <input class="form__input--white form__input--small form__input" type="text" id="youremailaddress" placeholder="" />
+                      <div class="form__controls form__controls--dcreme form__controls--subscribe footer_subscribe__input">
+                        <input class="form__input--dcreme form__input--subscribe form__input" type="text" id="youremailaddress" placeholder="" />
                       </div>
-                      <div class="form__controls form__controls--subscribe footer_subscribe__btn">
-                        <input class="btn--subscribe form__submit btn" type="submit" value="subscribe" />
+                      <div class="form__controls form__controls--subscribe_btn footer_subscribe__btn">
+                        <input class="btn--subscribe_btn form__submit btn" type="submit" value="subscribe" />
                       </div>
                     </div>
                   </form>

@@ -65,28 +65,7 @@
                     </ul>
                   </li>
                   <li class="nav_mobile__item">
-                    <a class="nav_mobile__link jsNavMobileLink" href="profile.html">
-                      <svg class="icon icon_icon-arrow-before nav_mobile__arrow_before">
-                        <use xlink:href="img/icons.svg#icon-arrow-before"></use>
-                      </svg>My Account
-                      <svg class="icon icon_icon-arrow nav_mobile__arrow">
-                        <use xlink:href="img/icons.svg#icon-arrow"></use>
-                      </svg>
-                    </a>
-                    <ul class="nav_mobile__sublist">
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="orders.html">Orders</a>
-                      </li>
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="addresses.html">Addresses</a>
-                      </li>
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="accountDetails.html">Account Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav_mobile__item">
-                    <a class="nav_mobile__link" href="index.html">Log Out</a>
+                    <a class="nav_mobile__link" href="login.html">Login</a>
                   </li>
                 </ul>
                 <div class="lang_mobile">
@@ -145,17 +124,40 @@
               <a class="nav__link" href="news&amp;blog.html">News &amp; Blog</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="aboutUs.html">About Us</a>
+              <a class="nav__link" href="aboutUs.html">About Us
+                <svg class="icon icon_icon-arrow-down nav__icon">
+                  <use xlink:href="img/icons.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+              <ul class="nav__sublist">
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="about.html">About State Of Mind</a>
+                </li>
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="partnrers.html">Our Partnrers</a>
+                </li>
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
         <div class="header__actions">
-          <div class="lang header__lang d-none d-lg-block">
-            <select>
-              <option value="FR">FR</option>
-              <option value="EN" selected="selected">EN</option>
-              <option value="RU">RU</option>
-            </select>
+          <div class="lang header__lang d-none d-lg-flex">
+            <div class="lang__active">EN
+              <svg class="icon icon_icon-arrow-down lang__icon">
+                <use xlink:href="img/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__link" href="javascript:void(0)">FR</a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__link" href="javascript:void(0)">RU</a>
+              </li>
+            </ul>
           </div>
           <div class="mini_cart header__mini_cart">
             <a class="mini_cart__link" href="miniCart.html">
@@ -166,18 +168,11 @@
             </a>
           </div>
           <div class="auth header__auth">
-            <div class="d-none d-lg-flex">
-              <a class="auth__link" href="profile.html">
-                <svg class="icon icon_icon-profile auth__icon">
-                  <use xlink:href="img/icons.svg#icon-profile"></use>
-                </svg>
-              </a>
-              <a class="auth__link" href="index.html">
-                <svg class="icon icon_icon-logout auth__icon">
-                  <use xlink:href="img/icons.svg#icon-logout"></use>
-                </svg>
-              </a>
-            </div>
+            <a class="auth__link" href="login.html">
+              <svg class="icon icon_icon-login auth__icon">
+                <use xlink:href="img/icons.svg#icon-login"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -190,132 +185,149 @@
       </figure>
       <div class="hero__content--home hero__content">
         <div class="container text-center">
-          <h2 class="title hero__subtitle">Discover the world</h2>
-          <h1 class="title hero__title">State Of Mind - État d’esprit</h1>
-          <div class="hero__btn">
+          <h2 class="title hero__subtitle" data-aos="fade-up" data-aos-delay="300">Discover the world</h2>
+          <h1 class="title hero__title" data-aos="fade-up" data-aos-delay="600">State Of Mind - État d’esprit</h1>
+          <div class="hero__btn" data-aos="fade-up" data-aos-delay="900">
             <a class="btn--creme btn--hero btn" href="#">Discover now</a>
           </div>
         </div>
       </div>
     </div>
     <div class="block block--reverse">
-      <div class="block__content--reverse block__content" data-aos="fade-left">
-        <div class="container">
-          <h3 class="title block__subtitle">Discover the Collection</h3>
-          <h2 class="title block__title">State Of Mind Perfumes</h2>
-          <p class="block__text">Order our discovery kit containing 10 perfume samples 1,5 ml. Choose your favourite fragrance. You will receive a voucher of 20€ that you can apply while making your purchase of the 100 ml of your choice.</p>
-          <div class="block__btn">
-            <a class="btn--brown btn" href="collection.html">order samples</a>
+      <div class="flex-lg-row-reverse no-gutters  row">
+        <div class="col col-12 col-lg-6 d-lg-flex">
+          <div class="block__content--reverse block__content" data-aos="fade-left" data-aos-delay="300">
+            <div class="container">
+              <h3 class="title block__subtitle">Discover the Collection</h3>
+              <h2 class="title block__title">State Of Mind Perfumes</h2>
+              <p class="block__text">Order our discovery kit containing 10 perfume samples 1,5 ml. Choose your favourite fragrance. You will receive a voucher of 20€ that you can apply while making your purchase of the 100 ml of your choice.</p>
+              <div class="block__btn">
+                <a class="btn--brown btn" href="collection.html">order samples</a>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="col col-12 col-lg-6">
+          <figure class="block__picture" data-aos="fade-right" data-aos-delay="300">
+            <img class="block__img swiper-lazy" data-src="./img/home/samples.jpg" alt="" />
+          </figure>
+        </div>
       </div>
-      <figure class="block__picture" data-aos="fade-right">
-        <img class="block__img swiper-lazy" data-src="./img/home/samples.jpg" alt="" />
-      </figure>
     </div>
     <div class="block">
-      <div class="block__content" data-aos="fade-right">
-        <div class="container">
-          <h3 class="title block__subtitle">Maison de parfums et thés parfumés</h3>
-          <h2 class="title block__title">State Of Mind – État d’esprit</h2>
-          <p class="block__text">Blending the timeless ritual of the tea ceremony with the art of perfumery. Tea, similarly to Perfume, brings you to a joyful state, energizes or calms you down.</p>
-          <div class="block__btn">
-            <a class="btn--brown btn" href="universes.html">Our Universe</a>
+      <div class=" no-gutters  row">
+        <div class="col col-12 col-lg-6 d-lg-flex">
+          <div class="block__content" data-aos="fade-right" data-aos-delay="300">
+            <div class="container">
+              <h3 class="title block__subtitle">Maison de parfums et thés parfumés</h3>
+              <h2 class="title block__title">State Of Mind – État d’esprit</h2>
+              <p class="block__text">Blending the timeless ritual of the tea ceremony with the art of perfumery. Tea, similarly to Perfume, brings you to a joyful state, energizes or calms you down.</p>
+              <div class="block__btn">
+                <a class="btn--brown btn" href="universes.html">Our Universe</a>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="col col-12 col-lg-6">
+          <figure class="block__picture" data-aos="fade-left" data-aos-delay="300">
+            <img class="block__img swiper-lazy" data-src="./img/home/universe.jpg" alt="" />
+          </figure>
+        </div>
       </div>
-      <figure class="block__picture" data-aos="fade-left">
-        <img class="block__img swiper-lazy" data-src="./img/home/universe.jpg" alt="" />
-      </figure>
     </div>
     <div class="home_slider">
       <div class="container">
         <h2 class="title home_slider__title text-center">State Of Mind Artistic Perfumery</h2>
         <div class="swiper-container home_slider__container">
           <div class="swiper-wrapper home_slider__wrapper">
-            <div class="product swiper-slide">
+            <a class="product swiper-slide" href="product.html">
               <figure class="product__picture">
                 <img class="product__img swiper-lazy" data-src="./img/products/01.jpg" alt="" />
               </figure>
-              <h4 class="title product__title">Natural Elegance Perfume</h4>
-              <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+              <h4 class="title   product__title">Natural Elegance Perfume</h4>
+              <div class="product__price">€ 235,00
+                <div class="product__action d-lg-none">
                   <svg class="icon icon_icon-add-to-cart product__icon">
                     <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                   </svg>
-                </a>
+                </div>
               </div>
               <div class="product__btn d-none d-lg-block">
-                <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
               </div>
-            </div>
-            <div class="product swiper-slide">
+            </a>
+            <a class="product swiper-slide" href="product.html">
               <figure class="product__picture">
                 <img class="product__img swiper-lazy" data-src="./img/products/02.jpg" alt="" />
               </figure>
-              <h4 class="title product__title">Butterfly Mind Perfume</h4>
-              <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+              <h4 class="title   product__title">Butterfly Mind Perfume</h4>
+              <div class="product__price">€ 235,00
+                <div class="product__action d-lg-none">
                   <svg class="icon icon_icon-add-to-cart product__icon">
                     <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                   </svg>
-                </a>
+                </div>
               </div>
               <div class="product__btn d-none d-lg-block">
-                <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
               </div>
-            </div>
-            <div class="product swiper-slide">
+            </a>
+            <a class="product swiper-slide" href="product.html">
               <figure class="product__picture">
                 <img class="product__img swiper-lazy" data-src="./img/products/03.jpg" alt="" />
               </figure>
-              <h4 class="title product__title">Spontaneous Generosity Perfume</h4>
-              <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+              <h4 class="title   product__title">Spontaneous Generosity Perfume</h4>
+              <div class="product__price">€ 235,00
+                <div class="product__action d-lg-none">
                   <svg class="icon icon_icon-add-to-cart product__icon">
                     <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                   </svg>
-                </a>
+                </div>
               </div>
               <div class="product__btn d-none d-lg-block">
-                <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
               </div>
-            </div>
-            <div class="product swiper-slide">
+            </a>
+            <a class="product swiper-slide" href="product.html">
               <figure class="product__picture">
                 <img class="product__img swiper-lazy" data-src="./img/products/04.jpg" alt="" />
               </figure>
-              <h4 class="title product__title">Creative Inspiration Perfume</h4>
-              <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+              <h4 class="title   product__title">Creative Inspiration Perfume</h4>
+              <div class="product__price">€ 235,00
+                <div class="product__action d-lg-none">
                   <svg class="icon icon_icon-add-to-cart product__icon">
                     <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                   </svg>
-                </a>
+                </div>
               </div>
               <div class="product__btn d-none d-lg-block">
-                <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
               </div>
-            </div>
-            <div class="product swiper-slide">
+            </a>
+            <a class="product swiper-slide" href="product.html">
               <figure class="product__picture">
                 <img class="product__img swiper-lazy" data-src="./img/products/01.jpg" alt="" />
               </figure>
-              <h4 class="title product__title">Natural Elegance Perfume</h4>
-              <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="#">
+              <h4 class="title   product__title">Natural Elegance Perfume</h4>
+              <div class="product__price">€ 235,00
+                <div class="product__action d-lg-none">
                   <svg class="icon icon_icon-add-to-cart product__icon">
                     <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                   </svg>
-                </a>
+                </div>
               </div>
               <div class="product__btn d-none d-lg-block">
-                <a class="btn--brown btn--fw-mobile btn--add-to-cart btn" href="#">Add to Cart</a>
+                <div class="btn--brown btn--fw-mobile btn--add-to-cart btn">Add to Cart</div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="swiper-button-prev home_slider__navigation home_slider__navigation--prev d-lg-flex">
-            <svg class="icon icon_icon-arrow-prev home_slider__icon">
+          <div class="swiper-button-prev navigation navigation--prev d-lg-flex">
+            <svg class="icon icon_icon-arrow-prev navigation__icon">
               <use xlink:href="img/icons.svg#icon-arrow-prev"></use>
             </svg>
           </div>
-          <div class="swiper-button-next home_slider__navigation home_slider__navigation--next d-lg-flex">
-            <svg class="icon icon_icon-arrow-next home_slider__icon">
+          <div class="swiper-button-next navigation navigation--next d-lg-flex">
+            <svg class="icon icon_icon-arrow-next navigation__icon">
               <use xlink:href="img/icons.svg#icon-arrow-next"></use>
             </svg>
           </div>
@@ -326,57 +338,75 @@
         </div>
       </div>
     </div>
-    <div class="home_articles">
+    <div class="articles">
       <div class="container">
-        <h2 class="title home_articles__title">Blog & News</h2>
+        <h2 class="title articles__title">Blog & News</h2>
         <div class="row">
           <div class="col col-12 col-lg-4">
             <div class="article">
-              <figure class="article__picture">
-                <img class="article__img swiper-lazy" data-src="./img/blog/01.jpg" alt="" />
-              </figure>
-              <h3 class="article__title">Opening the Olfactory Tea Room STATE OF MIND in Versailles</h3>
+              <a class="article__link" href="blog">
+                <figure class="article__picture">
+                  <img class="article__img swiper-lazy" data-src="./img/blog/01.jpg" alt="" />
+                </figure>
+              </a>
+              <a class="article__link" href="blog">
+                <h3 class="article__title">Opening the Olfactory Tea Room STATE OF MIND in Versailles</h3>
+              </a>
               <date class="article__date">21 June 2020</date>
             </div>
           </div>
           <div class="col col-12 col-lg-4">
             <div class="article">
-              <figure class="article__picture">
-                <img class="article__img swiper-lazy" data-src="./img/blog/02.jpg" alt="" />
-              </figure>
-              <h3 class="article__title">Tea and Perfume Ceremony in the restaurant LA LANGOUSTE in Nice</h3>
+              <a class="article__link" href="blog">
+                <figure class="article__picture">
+                  <img class="article__img swiper-lazy" data-src="./img/blog/02.jpg" alt="" />
+                </figure>
+              </a>
+              <a class="article__link" href="blog">
+                <h3 class="article__title">Tea and Perfume Ceremony in the restaurant LA LANGOUSTE in Nice</h3>
+              </a>
               <date class="article__date">21 June 2020</date>
             </div>
           </div>
           <div class="col col-12 col-lg-4">
             <div class="article">
-              <figure class="article__picture">
-                <img class="article__img swiper-lazy" data-src="./img/blog/03.jpg" alt="" />
-              </figure>
-              <h3 class="article__title">Opening the Olfactory Tea Room STATE OF MIND in Versailles</h3>
-              <date class="article__date">08 April 2020</date>
+              <a class="article__link" href="blog">
+                <figure class="article__picture">
+                  <img class="article__img swiper-lazy" data-src="./img/blog/03.jpg" alt="" />
+                </figure>
+              </a>
+              <a class="article__link" href="blog">
+                <h3 class="article__title">The brand STATE OF MIND is presented at Journée Beautypress</h3>
+              </a>
+              <date class="article__date">13 June 2019</date>
             </div>
           </div>
         </div>
-        <div class="home_articles__btn">
+        <div class="articles__btn">
           <a class="btn--lbrown btn--fw-mobile btn" href="#">Read more</a>
         </div>
       </div>
     </div>
     <div class="block">
-      <div class="block__content" data-aos="fade-right">
-        <div class="container">
-          <h3 class="title block__subtitle">Catherine Laskine-Balandina</h3>
-          <h2 class="title block__title">Art of being happy</h2>
-          <p class="block__text">My beloved grandmother often told me about China — the Wall of Nine Dragons, the Great Wall, gardens, calligraphy, acupuncture, the lotus flower opening in a cup of tea, the scents and colors of tea shops… Through her wonderful stories, I traveled to the magical world filled with tastes of teas and fragrant gardens.</p>
-          <div class="block__btn">
-            <a class="btn--brown btn" href="#">find more</a>
+      <div class=" no-gutters  row">
+        <div class="col col-12 col-lg-6 d-lg-flex">
+          <div class="block__content" data-aos="fade-right" data-aos-delay="300">
+            <div class="container">
+              <h3 class="title block__subtitle">Catherine Laskine-Balandina</h3>
+              <h2 class="title block__title">Art of being happy</h2>
+              <p class="block__text">My beloved grandmother often told me about China — the Wall of Nine Dragons, the Great Wall, gardens, calligraphy, acupuncture, the lotus flower opening in a cup of tea, the scents and colors of tea shops… Through her wonderful stories, I traveled to the magical world filled with tastes of teas and fragrant gardens.</p>
+              <div class="block__btn">
+                <a class="btn--brown btn" href="#">find more</a>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="col col-12 col-lg-6">
+          <figure class="block__picture" data-aos="fade-left" data-aos-delay="300">
+            <img class="block__img swiper-lazy" data-src="./img/home/about.jpg" alt="" />
+          </figure>
+        </div>
       </div>
-      <figure class="block__picture" data-aos="fade-left">
-        <img class="block__img swiper-lazy" data-src="./img/home/about.jpg" alt="" />
-      </figure>
     </div>
   </div>
   <div class="footer">
@@ -441,13 +471,13 @@
                 <div class="footer_subscribe__title">Subscribe and get 10% OFF!</div>
                 <div class="form footer_subscribe__form">
                   <form action="#">
-                    <label class="form__label" for="youremailaddress">Your Email Address</label>
+                    <label class="form__label--small form__label--dcreme form__label" for="youremailaddress">Your Email Address</label>
                     <div class="form__row footer_subscribe__row">
-                      <div class="form__controls form__controls--white form__controls--small footer_subscribe__input">
-                        <input class="form__input--white form__input--small form__input" type="text" id="youremailaddress" placeholder="" />
+                      <div class="form__controls form__controls--dcreme form__controls--subscribe footer_subscribe__input">
+                        <input class="form__input--dcreme form__input--subscribe form__input" type="text" id="youremailaddress" placeholder="" />
                       </div>
-                      <div class="form__controls form__controls--subscribe footer_subscribe__btn">
-                        <input class="btn--subscribe form__submit btn" type="submit" value="subscribe" />
+                      <div class="form__controls form__controls--subscribe_btn footer_subscribe__btn">
+                        <input class="btn--subscribe_btn form__submit btn" type="submit" value="subscribe" />
                       </div>
                     </div>
                   </form>

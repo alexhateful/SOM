@@ -65,28 +65,7 @@
                     </ul>
                   </li>
                   <li class="nav_mobile__item">
-                    <a class="nav_mobile__link jsNavMobileLink" href="profile.html">
-                      <svg class="icon icon_icon-arrow-before nav_mobile__arrow_before">
-                        <use xlink:href="img/icons.svg#icon-arrow-before"></use>
-                      </svg>My Account
-                      <svg class="icon icon_icon-arrow nav_mobile__arrow">
-                        <use xlink:href="img/icons.svg#icon-arrow"></use>
-                      </svg>
-                    </a>
-                    <ul class="nav_mobile__sublist">
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="orders.html">Orders</a>
-                      </li>
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="addresses.html">Addresses</a>
-                      </li>
-                      <li class="nav_mobile__subitem">
-                        <a class="nav_mobile__sublink" href="accountDetails.html">Account Details</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav_mobile__item">
-                    <a class="nav_mobile__link" href="index.html">Log Out</a>
+                    <a class="nav_mobile__link" href="login.html">Login</a>
                   </li>
                 </ul>
                 <div class="lang_mobile">
@@ -133,7 +112,7 @@
         <div class="nav header__nav d-none d-lg-flex">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="universes.html">Universes</a>
+              <a class="nav__link--active nav__link" href="universes.html">Universes</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="collection.html">Catalog</a>
@@ -145,17 +124,40 @@
               <a class="nav__link" href="news&amp;blog.html">News &amp; Blog</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="aboutUs.html">About Us</a>
+              <a class="nav__link" href="aboutUs.html">About Us
+                <svg class="icon icon_icon-arrow-down nav__icon">
+                  <use xlink:href="img/icons.svg#icon-arrow-down"></use>
+                </svg>
+              </a>
+              <ul class="nav__sublist">
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="about.html">About State Of Mind</a>
+                </li>
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="partnrers.html">Our Partnrers</a>
+                </li>
+                <li class="nav__subitem">
+                  <a class="nav__sublink" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
         <div class="header__actions">
-          <div class="lang header__lang d-none d-lg-block">
-            <select>
-              <option value="FR">FR</option>
-              <option value="EN" selected="selected">EN</option>
-              <option value="RU">RU</option>
-            </select>
+          <div class="lang header__lang d-none d-lg-flex">
+            <div class="lang__active">EN
+              <svg class="icon icon_icon-arrow-down lang__icon">
+                <use xlink:href="img/icons.svg#icon-arrow-down"></use>
+              </svg>
+            </div>
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__link" href="javascript:void(0)">FR</a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__link" href="javascript:void(0)">RU</a>
+              </li>
+            </ul>
           </div>
           <div class="mini_cart header__mini_cart">
             <a class="mini_cart__link" href="miniCart.html">
@@ -166,18 +168,11 @@
             </a>
           </div>
           <div class="auth header__auth">
-            <div class="d-none d-lg-flex">
-              <a class="auth__link" href="profile.html">
-                <svg class="icon icon_icon-profile auth__icon">
-                  <use xlink:href="img/icons.svg#icon-profile"></use>
-                </svg>
-              </a>
-              <a class="auth__link" href="index.html">
-                <svg class="icon icon_icon-logout auth__icon">
-                  <use xlink:href="img/icons.svg#icon-logout"></use>
-                </svg>
-              </a>
-            </div>
+            <a class="auth__link" href="login.html">
+              <svg class="icon icon_icon-login auth__icon">
+                <use xlink:href="img/icons.svg#icon-login"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -190,7 +185,7 @@
       </figure>
       <div class="hero__content">
         <div class="container text-center">
-          <h1 class="title hero__title">All Universes</h1>
+          <h1 class="title hero__title" data-aos="fade-up" data-aos-delay="600">All Universes</h1>
         </div>
       </div>
     </div>
@@ -199,7 +194,7 @@
         <div class="swiper-container universes_nav__container jsUniversesNavContainer">
           <div class="swiper-wrapper universes_nav__wrapper">
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#modernnomad">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/01.png" alt="" />
                 </figure>
@@ -207,7 +202,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#naturalelegance">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/02.png" alt="" />
                 </figure>
@@ -215,7 +210,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#senseofhumor">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/03.png" alt="" />
                 </figure>
@@ -223,7 +218,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#aestheticturbulence">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/04.png" alt="" />
                 </figure>
@@ -231,7 +226,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#creativeinspiration">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/05.png" alt="" />
                 </figure>
@@ -239,7 +234,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#voluptuousseduction">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/06.png" alt="" />
                 </figure>
@@ -247,7 +242,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#secretofsuccess">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/07.png" alt="" />
                 </figure>
@@ -255,7 +250,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#butterflymind">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/08.png" alt="" />
                 </figure>
@@ -263,7 +258,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#l’ameslave">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/09.png" alt="" />
                 </figure>
@@ -271,7 +266,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#spontaneousgenerosity">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/10.png" alt="" />
                 </figure>
@@ -279,7 +274,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#frenchgallantry">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/11.png" alt="" />
                 </figure>
@@ -287,7 +282,7 @@
               </a>
             </div>
             <div class="universes_nav__item swiper-slide">
-              <a class="universes_nav__link jsUniversesNavLink" href="javascript:void(0)">
+              <a class="universes_nav__link jsUniversesNavLink" href="#openmind">
                 <figure class="universes_nav__picture">
                   <img class="universes_nav__img" src="./img/universes/nav/12.png" alt="" />
                 </figure>
@@ -299,7 +294,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#F5F1EE">
+    <div class="universes_block" style="background-color:#F5F1EE" id="modernnomad">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -316,7 +311,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">Modern Nomad</h2>
                       <p class="universes_block__text">The change is the only constant thing that we notice about the life. The nomad spirit helps embrace any situation easily and makes you happy, travelling your life.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -333,74 +328,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item1.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -418,7 +418,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#F6F6F6">
+    <div class="universes_block" style="background-color:#F6F6F6" id="naturalelegance">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -435,7 +435,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">Natural Elegance</h2>
                       <p class="universes_block__text">Audrey Hepburn’s Secrets of Beauty: To have beautiful eyes, look for generous persons around you. To have a slim waist, share your meal with those who are hungry.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -452,74 +452,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item2.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -537,7 +542,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#F3F7E7">
+    <div class="universes_block" style="background-color:#F3F7E7" id="senseofhumor">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -554,7 +559,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">Sense of Humor</h2>
                       <p class="universes_block__text">Master of comedy and tragedy, satire and irony, Shakespeare, said that Humor is the best garment to wear in society.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -571,74 +576,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item3.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -656,7 +666,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#FEF4E9">
+    <div class="universes_block" style="background-color:#FEF4E9" id="aestheticturbulence">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -673,7 +683,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">Aesthetic Turbulence</h2>
                       <p class="universes_block__text">Aesthetic Turbulence is what enables us to transform reality into beauty. From aesthetic conflict comes art. This kind of turbulence cannot support “false notes”.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -690,74 +700,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item4.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -775,7 +790,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#EFEAF4">
+    <div class="universes_block" style="background-color:#EFEAF4" id="creativeinspiration">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -792,7 +807,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">Creative Inspiration</h2>
                       <p class="universes_block__text">To live a creative life, we must lose our fear of being wrong. Some people feel the rain, some just get wet. Some people smell good perfume, some travel through the perfume to exotic destinations of their imagination.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -809,74 +824,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item5.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -894,7 +914,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#F5ECEF">
+    <div class="universes_block" style="background-color:#F5ECEF" id="voluptuousseduction">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -911,7 +931,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">Voluptuous Seduction</h2>
                       <p class="universes_block__text">When raised to the level of art, seduction, an indirect and subtle form of power, has toppled empires, won elections and enslaved great minds. French Philosopher Voltaire were saying that “It is not enough to conquer; one must learn to seduce”.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -928,74 +948,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item6.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -1013,7 +1038,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#F7EAE7">
+    <div class="universes_block" style="background-color:#F7EAE7" id="secretofsuccess">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -1030,7 +1055,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">Secret of Success</h2>
                       <p class="universes_block__text">“Fortuna audaces iuvat” |”Fortune favours the brave” | Action is a foundational key to all success according to Pablo Picasso.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -1047,74 +1072,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item7.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -1132,7 +1162,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#F9EDF0">
+    <div class="universes_block" style="background-color:#F9EDF0" id="butterflymind">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -1149,7 +1179,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">Butterfly Mind</h2>
                       <p class="universes_block__text">Butterfly love is similar to rushing water; it falls, it rolls, it runs away murmuring: it will dry up losing the source, born from a storm, it has its length of time.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -1166,74 +1196,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item8.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -1251,7 +1286,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#EDEDF8">
+    <div class="universes_block" style="background-color:#EDEDF8" id="l’ameslave">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -1268,7 +1303,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">L’ Ame Slave</h2>
                       <p class="universes_block__text">She is deep, mysterious, romantic, warm, independent, at once wild, mad melancholic, pure, honest, spontaneous, and sometimes naive, often subtle and refined. Eventually also highly individualistic.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -1285,74 +1320,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item9.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -1370,7 +1410,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#F1EBEB">
+    <div class="universes_block" style="background-color:#F1EBEB" id="spontaneousgenerosity">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -1387,7 +1427,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">Spontaneous Generosity</h2>
                       <p class="universes_block__text">What is generosity? Talent, way of life, credo, filter to your heart? Generous people do not have the best of everything, they make the best of everything.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -1404,74 +1444,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item10.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -1489,7 +1534,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#F4F1F1">
+    <div class="universes_block" style="background-color:#F4F1F1" id="frenchgallantry">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -1506,7 +1551,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">French Gallantry</h2>
                       <p class="universes_block__text">STATE OF MIND celebrates in French Gallantry these chivalrous origins and its art of mixing among the serious a little grain of madness.</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -1523,74 +1568,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item11.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -1608,7 +1658,7 @@
         </div>
       </div>
     </div>
-    <div class="universes_block" style="background-color:#F0F7FB">
+    <div class="universes_block" style="background-color:#F0F7FB" id="openmind">
       <div class="container">
         <div class="row">
           <div class="col col-12 col-lg-10 offset-lg-1">
@@ -1625,7 +1675,7 @@
                       <h3 class="title universes_block__subtitle">Discover the</h3>
                       <h2 class="title universes_block__title">Open Mind</h2>
                       <p class="universes_block__text">Drop the certainty. The opposite is not insertitude. It is openness, curiosity and the will to embrace the paradox. The ultimate challenge is to accept ourselves as we are, without ever ceasing to try to learn and grow. Tony Schwatz</p>
-                      <a class="btn--brown-border btn" href="javascript:void(0)">Discover</a>
+                      <a class="btn--brown-border btn" href="collection.html">Discover</a>
                     </div>
                   </div>
                 </div>
@@ -1642,74 +1692,79 @@
             <div class="swiper-container universes_slider__container jsUniversesSliderContainer">
               <div class="swiper-wrapper universes_slider__wrapper">
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/item12.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Parfum</h4>
-                    <div class="product__price">€ 235,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Parfum</h4>
+                    <div class="product__price--small product__price">€ 235,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/02.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Echantillon de thé 5 gr</h4>
-                    <div class="product__price">€ 2,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Echantillon de thé 5 gr</h4>
+                    <div class="product__price--small product__price">€ 2,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/03.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Recharge de Thé</h4>
-                    <div class="product__price">€ 56,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Recharge de Thé</h4>
+                    <div class="product__price--small product__price">€ 56,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/04.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Modern Nomad Thé</h4>
-                    <div class="product__price">€ 65,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Modern Nomad Thé</h4>
+                    <div class="product__price--small product__price">€ 65,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="universes_slider__item swiper-slide">
-                  <div class="product universes_slider__product">
+                  <a class="product universes_slider__product" href="product.html">
                     <figure class="product__picture">
                       <img class="product__img swiper-lazy" data-src="./img/universes/products/05.png" alt="" />
                     </figure>
-                    <h4 class="title product__title">Boite Métal Géante</h4>
-                    <div class="product__price">€ 40,00<a class="product__action d-lg-none" href="javascript:void(0)">
+                    <h4 class="title product__title--small  product__title">Boite Métal Géante</h4>
+                    <div class="product__price--small product__price">€ 40,00
+                      <div class="product__action d-lg-none">
                         <svg class="icon icon_icon-add-to-cart product__icon">
                           <use xlink:href="img/icons.svg#icon-add-to-cart"></use>
                         </svg>
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="swiper-scrollbar universes_slider__scrollbar scrollbar"></div>
@@ -1790,13 +1845,13 @@
                 <div class="footer_subscribe__title">Subscribe and get 10% OFF!</div>
                 <div class="form footer_subscribe__form">
                   <form action="#">
-                    <label class="form__label" for="youremailaddress">Your Email Address</label>
+                    <label class="form__label--small form__label--dcreme form__label" for="youremailaddress">Your Email Address</label>
                     <div class="form__row footer_subscribe__row">
-                      <div class="form__controls form__controls--white form__controls--small footer_subscribe__input">
-                        <input class="form__input--white form__input--small form__input" type="text" id="youremailaddress" placeholder="" />
+                      <div class="form__controls form__controls--dcreme form__controls--subscribe footer_subscribe__input">
+                        <input class="form__input--dcreme form__input--subscribe form__input" type="text" id="youremailaddress" placeholder="" />
                       </div>
-                      <div class="form__controls form__controls--subscribe footer_subscribe__btn">
-                        <input class="btn--subscribe form__submit btn" type="submit" value="subscribe" />
+                      <div class="form__controls form__controls--subscribe_btn footer_subscribe__btn">
+                        <input class="btn--subscribe_btn form__submit btn" type="submit" value="subscribe" />
                       </div>
                     </div>
                   </form>
