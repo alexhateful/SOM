@@ -7406,6 +7406,13 @@ html.remodal-is-locked {
   color: #A69B95;
 }
 
+.modal__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .modal__btns *:last-child {
   margin-top: 10px;
 }
